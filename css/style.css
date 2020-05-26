@@ -65,6 +65,52 @@ body {
     font-size: 18px;
 }
 
+.head {
+    padding-top: 70px;
+    height: 90vh;
+    width: 100%;
+    background-image: url(/img/bgHead2.png);
+    background-position: center right 23%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head__body {
+    margin-top: 3em;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+}
+
+.head__body h1{
+    font-family: 'Fredoka One', cursive;
+    color: rgb(56, 56, 56);
+    font-size: 6vw;
+}
+
+.head__body button {
+    font-family: 'Fredoka One', cursive;
+    color:rgb(56, 56, 56);
+    padding: 10px 10px;
+    width: auto;
+    margin:20px auto;
+    background: transparent;
+    background-image: linear-gradient(to left,transparent,transparent 50%,rgb(56, 56, 56) 50%,rgb(56, 56, 56));
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .35s ease-in;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 20px;
+}
+.head__body button:hover {
+    background-position: 0 0;
+    color:#fff;
+}
+
 @media (max-width:767px){
     body.lock {
         overflow: hidden;
@@ -140,23 +186,19 @@ body {
     .header__list li {
         margin: 0 10px 10px 10px;
     }
+    .head__body {
+        margin-top: 4em;
+    }
+    .head__body h1{
+        font-size: 6vw;
+    }
+    .head__body button {
+        padding: 10px 10px;
+        width: 100px;
+        font-size: 11px;
+    }
 }
 
-.head {
-    padding-top: 70px;
-    height: 89vh;
-    background-image: url(/img/bgHead.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.head__body {
-    
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
 
 /*  ------------------------------------------- */
 .content {
