@@ -6,6 +6,7 @@
 body {
     height: 100%;
 }
+/*  -------------,Header,------------------------------ */
 .header {
     position: fixed;
     width: 100%;
@@ -59,6 +60,7 @@ body {
     margin-left: 20px;
 }
 .header__link {
+    font-family: 'Lato', sans-serif;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -82,7 +84,6 @@ a:hover:after,
 a:focus:after {
 	width: 100%;
 }
-
 .head {
     padding-top: 70px;
     height: 90vh;
@@ -92,7 +93,6 @@ a:focus:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .head__body {
     margin-top: 3em;
     margin-bottom: 5%;
@@ -101,13 +101,16 @@ a:focus:after {
     width: auto;
     text-align: center;
 }
-
 .head__body h1{
     font-family: 'Fredoka One', cursive;
-    color: rgb(56, 56, 56);
+    color: #FFF;
+    mix-blend-mode: multiply;
+    text-shadow: 0 0 9px rgba(0,0,0,8), 0 4px 6px rgba(0, 0, 0, 0.603);
     font-size: 6vw;
 }
-
+.head__body button b {
+    font-size: 20px;
+}
 .head__body button {
     font-family: 'Fredoka One', cursive;
     color:rgb(56, 56, 56);
@@ -115,19 +118,62 @@ a:focus:after {
     width: auto;
     margin:20px auto;
     background: transparent;
-    background-image: linear-gradient(to left,transparent,transparent 50%,rgb(56, 56, 56) 50%,rgb(56, 56, 56));
+    background-image: linear-gradient(to left,transparent,transparent 50%,rgb(83, 83, 83) 50%,rgb(83, 83, 83));
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .35s ease-in;
     font-size: 18px;
     letter-spacing: 1px;
-    border: 2px solid rgb(56, 56, 56);
-    border-radius: 20px;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 30px;
 }
 .head__body button:hover {
     background-position: 0 0;
-    color:#fff;
+    color:rgb(217, 225, 230);
 }
+/*  -------------^Header^------------------------------ */
+
+/*  -------------,Skills,------------------------------ */
+
+/*  -------------^Skills^------------------------------ */
+
+/*  -------------,About Me,----------------------------- */
+.content {
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    padding: 10% 5%;
+}
+.left {
+    font-family: 'Lato', sans-serif;
+    width: 60%;
+    height: max-content;
+}
+.left > h1 {
+    text-indent: 1em;
+    color: rgb(56, 56, 56);
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+}
+.left > p {
+    text-indent: 1.5em;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.content__img > img {
+    display: block;
+    max-width: 20vw;
+    height: auto;
+    box-shadow: 0 0 8px 8px white inset;
+}
+/*  -------------^About Me^----------------------------- */
 
 @media (max-width:767px){
     body.lock {
@@ -215,13 +261,7 @@ a:focus:after {
         width: 100px;
         font-size: 11px;
     }
+    .head__body button b {
+        font-size: 11px;
+    }
 }
-
-/*  -------------^Header^------------------------------ */
-/*  -------------,Content,----------------------------- */
-/* .content {
-    display: flex;
-}
-content__text {
-    display: flex;
-} */
