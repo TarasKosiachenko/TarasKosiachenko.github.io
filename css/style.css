@@ -14,7 +14,7 @@ body {
     z-index: 100;
 }
 .container {
-    max-width: 1180px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 0px 10px;
 }
@@ -62,7 +62,25 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+	line-height: 1;
+}
+.header__link:after {
+	display: block;
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+	height: 2px;
+	background-color: #fff;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+a:hover:after,
+a:focus:after {
+	width: 100%;
 }
 
 .head {
@@ -199,15 +217,11 @@ body {
     }
 }
 
-
-/*  ------------------------------------------- */
-.content {
-    padding-top: 20px;
+/*  -------------^Header^------------------------------ */
+/*  -------------,Content,----------------------------- */
+/* .content {
+    display: flex;
 }
-.content__text {
-    font-size: 18px;
-    line-height: 25px;
-}
-.content__text p {
-    margin-bottom: 20px;
-}
+content__text {
+    display: flex;
+} */
