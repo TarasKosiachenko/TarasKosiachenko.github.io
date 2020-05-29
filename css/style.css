@@ -134,16 +134,56 @@ a:focus:after {
 /*  -------------^Header^------------------------------ */
 
 /*  -------------,Skills,------------------------------ */
+.skill {
+    display: flex;
+    height: auto;
+    padding: 10% 5%;
+}
+.skill__text {
+    width: 50%;
+    padding: 5%;
+}
+.progbar {
+    width: 50%;
+    padding: 0 5%;
+}
+.progbar p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    margin: 5px 0;
+}
+.meter {
+    height: 15px;
+    background: rgb(207, 207, 207);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 4%;
+}
+.meter > span {
+    display: block;
+    height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    background-color: rgb(43,194,83);
+}
+.meter > span p {
+    font-size: 13px;
+    margin-right: 3%;
+    color: rgb(230, 230, 230);
+}
 
 /*  -------------^Skills^------------------------------ */
 
 /*  -------------,About Me,----------------------------- */
-.content {
+.about {
     height: auto;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(240, 240, 240);
-    padding: 10% 5%;
+    padding: 5% 5%;
 }
 .left {
     font-family: 'Lato', sans-serif;
@@ -153,13 +193,13 @@ a:focus:after {
 .left > h1 {
     text-indent: 1em;
     color: rgb(56, 56, 56);
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin-bottom: 5%;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 .left > p {
     text-indent: 1.5em;
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 1.5;
     margin-bottom: 5%;
     font-weight: bold;
@@ -167,11 +207,10 @@ a:focus:after {
     letter-spacing: 1px;
     text-align: justify;
 }
-.content__img > img {
+.about__img > img {
     display: block;
-    max-width: 20vw;
+    width: 20vw;
     height: auto;
-    box-shadow: 0 0 8px 8px white inset;
 }
 /*  -------------^About Me^----------------------------- */
 
@@ -263,5 +302,37 @@ a:focus:after {
     }
     .head__body button b {
         font-size: 11px;
+    }
+    /* ---------- */
+    .skill {
+        display: block;
+    }
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+    .left > h1 {
+        font-size: 4vw;
+    }
+    .left > p {
+        font-size: 2vw;
+    }
+    .progbar {
+        width: 70%;
+    }
+    .progbar p{
+        font-size: 80%;
+    }
+    /* ------------ */
+    .about {
+        display: block;
+    }
+    .about__img {
+        display:flex;
+        justify-content: center;
+    }
+    .about__img img {
+        width: 30vw;
+        height: auto;
     }
 }
