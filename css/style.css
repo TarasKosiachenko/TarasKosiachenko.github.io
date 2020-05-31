@@ -108,10 +108,8 @@ a:focus:after {
     text-shadow: 0 0 9px rgba(0,0,0,8), 0 4px 6px rgba(0, 0, 0, 0.603);
     font-size: 6vw;
 }
-.head__body button b {
-    font-size: 20px;
-}
-.head__body button {
+.mybutton {
+    font-size: 1.5vw;
     font-family: 'Fredoka One', cursive;
     color:rgb(56, 56, 56);
     padding: 10px 10px;
@@ -122,14 +120,17 @@ a:focus:after {
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .35s ease-in;
-    font-size: 18px;
     letter-spacing: 1px;
     border: 2px solid rgb(83, 83, 83);
     border-radius: 30px;
+    cursor: pointer;
 }
-.head__body button:hover {
-    background-position: 0 0;
+.head .mybutton:hover {
     color:rgb(217, 225, 230);
+}
+.mybutton:hover {
+    background-position: 0 0;
+    color:rgb(240, 240, 240);
 }
 /*  -------------^Header^------------------------------ */
 
@@ -137,7 +138,8 @@ a:focus:after {
 .skill {
     display: flex;
     height: auto;
-    padding: 10% 5%;
+    padding: 5% 5%;
+    background-color: #fff;
 }
 .skill__text {
     width: 50%;
@@ -145,7 +147,7 @@ a:focus:after {
 }
 .progbar {
     width: 50%;
-    padding: 0 5%;
+    padding: 4% 5% 0;
 }
 .progbar p {
     font-family: 'Lato', sans-serif;
@@ -179,10 +181,10 @@ a:focus:after {
 
 /*  -------------,About Me,----------------------------- */
 .about {
+    background-color: rgb(240, 240, 240);
     height: auto;
     display:flex;
     justify-content: space-around;
-    background-color: rgb(240, 240, 240);
     padding: 5% 5%;
 }
 .left {
@@ -191,17 +193,14 @@ a:focus:after {
     height: max-content;
 }
 .left > h1 {
-    text-indent: 1em;
     color: rgb(56, 56, 56);
     font-size: 2vw;
     margin-bottom: 5%;
-    /* letter-spacing: 1px; */
 }
 .left > p {
-    text-indent: 1.5em;
     font-size: 1vw;
     line-height: 1.5;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-weight: bold;
     color: rgb(56, 56, 56);
     letter-spacing: 1px;
@@ -213,6 +212,51 @@ a:focus:after {
     height: auto;
 }
 /*  -------------^About Me^----------------------------- */
+
+/*  -------------,Resume,----------------------------- */
+.resume {
+    height: auto;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240);
+    padding: 5% 5%;
+    text-align: center;
+}
+.resume p{
+    text-align: center;
+}
+.resume .mybutton:hover {
+    color:rgb(240, 240, 240);
+}
+/* ----------------^Resume^------------------- */
+
+/* ----------------,Portfolio,------------------- */
+.portfolio {
+    height: auto;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5% 5%;
+}
+.portfolio .left {
+    text-align: center;
+    margin: 0 auto;
+}
+.portfolio p {
+    text-align: center;
+    margin-bottom: 10%;
+}
+.cell { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    }
+.cell > div {
+  font-size: 5vw;
+  background: rgb(70, 70, 70);
+  text-align: center;
+}
+/*  -------------^Portfolio^----------------------------- */
 
 @media (max-width:767px){
     body.lock {
@@ -295,16 +339,17 @@ a:focus:after {
     .head__body h1{
         font-size: 6vw;
     }
-    .head__body button {
+    .mybutton {
         padding: 10px 10px;
-        width: 100px;
+        width: auto;
         font-size: 11px;
     }
-    .head__body button b {
+    .mybutton b {
         font-size: 11px;
     }
     /* ---------- */
     .skill {
+        padding: 10% 5%;
         display: block;
     }
     .left {
@@ -325,6 +370,7 @@ a:focus:after {
     }
     /* ------------ */
     .about {
+        padding: 10% 5%;
         display: block;
     }
     .about__img {
@@ -332,7 +378,32 @@ a:focus:after {
         justify-content: center;
     }
     .about__img img {
+        margin-top: 5%;
         width: 30vw;
         height: auto;
     }
+    /* ------------------ */
+    .resume {
+        padding: 10% 5%;
+    }
+    /* ------------------ */
+    .portfolio {
+        padding: 10% 5%;
+    }
+    .cell { 
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+        }
+    /* ------------------ */
+}
+
+@media (max-width:500px){
+    .cell { 
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1vw;
+        }
 }
