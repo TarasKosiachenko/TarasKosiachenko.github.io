@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: none !important
 }
 body {
     height: 100%;
@@ -109,16 +110,18 @@ a:focus:after {
     font-size: 6vw;
 }
 .mybutton {
-    font-size: 1.5vw;
-    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
     color:rgb(56, 56, 56);
-    padding: 10px 10px;
+    padding: 5px 5px;
     width: auto;
+    height: auto;
     margin:20px auto;
     background: transparent;
     background-image: linear-gradient(to left,transparent,transparent 50%,rgb(83, 83, 83) 50%,rgb(83, 83, 83));
     background-position: 100% 0;
-    background-size: 200% 100%;
+    background-size: 210% 105%;
     transition: all .35s ease-in;
     letter-spacing: 1px;
     border: 2px solid rgb(83, 83, 83);
@@ -245,16 +248,29 @@ a:focus:after {
     text-align: center;
     margin-bottom: 10%;
 }
-.cell { 
+.cell {
+    margin: 0 auto;
+    width: 80%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
-    }
-.cell > div {
-  font-size: 5vw;
-  background: rgb(70, 70, 70);
-  text-align: center;
+    grid-gap: 1vw;
+}
+.hidden {
+    display: none;
+}
+.show-hidden {
+    margin: 1% auto;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
+.portfolio button {
+    display: block;
+    justify-content: center;
+    margin-top: 5%;
 }
 /*  -------------^Portfolio^----------------------------- */
 
@@ -340,12 +356,9 @@ a:focus:after {
         font-size: 6vw;
     }
     .mybutton {
-        padding: 10px 10px;
         width: auto;
-        font-size: 11px;
-    }
-    .mybutton b {
-        font-size: 11px;
+        height: auto;
+        font-size: 10px;
     }
     /* ---------- */
     .skill {
@@ -391,19 +404,31 @@ a:focus:after {
         padding: 10% 5%;
     }
     .cell { 
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
         grid-gap: 1vw;
-        }
+    }
+    .show-hidden {
+        width: 100%;
+        grid-gap: 1vw;
+    }
     /* ------------------ */
 }
 
 @media (max-width:500px){
-    .cell { 
+    .cell {
+        width: 60%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1vw;
+    }
+    .hidden{
+        display: none;
+    }
+    .show-hidden {
+        width: 60%;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         grid-gap: 1vw;
-        }
+    }
 }
