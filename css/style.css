@@ -197,11 +197,11 @@ a:focus:after {
 }
 .left > h1 {
     color: rgb(56, 56, 56);
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 5%;
 }
 .left > p {
-    font-size: 1vw;
+    font-size: 1.3vw;
     line-height: 1.5;
     margin-bottom: 2%;
     font-weight: bold;
@@ -213,6 +213,7 @@ a:focus:after {
     display: block;
     width: 20vw;
     height: auto;
+    margin-top: 15%;
 }
 /*  -------------^About Me^----------------------------- */
 
@@ -289,6 +290,80 @@ a:focus:after {
     margin-top: 5%;
 }
 /*  -------------^Portfolio^----------------------------- */
+
+/*  -------------,Footer,----------------------------- */
+.footer {
+    background: #1e2f33;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    padding: 5% 5%;
+}
+.footer .left {
+    width: 40%;
+    line-height: 10px;
+}
+.footer .left > h1{
+    color: #fff;
+    margin: 7% auto;
+    text-transform: uppercase;
+}
+.footer .left > p {
+    color: #919191;
+    margin: 0;
+}
+.right {
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    margin-top: 4%;
+}
+.right p {
+    color: #fff;
+    margin: 5% 0 1% 0;
+}
+.right input {
+    background: #4b595c;
+    height: 30px;
+    width: 80%;
+}
+.right textarea {
+    background: #4b595c;
+    height: 145px;
+    width: 80%;
+}
+.letter {
+    font-size: 1.5vw;
+    color: #fff;
+    margin-right: 10%;
+}
+
+input[type~="text"], input[type~="password"], input[type~="select"], textarea
+{font-size: 17px; color: #fff; padding-left: 5px;}
+
+.footerbutton {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    padding: 5px 5px;
+    width: auto;
+    height: auto;
+    margin:10px auto;
+    background: transparent;
+    background-image: linear-gradient(to left,transparent,transparent 50%, #4b595c 50%,#4b595c);
+    background-position: 100% 0;
+    background-size: 210% 105%;
+    transition: all .35s ease-in;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.footerbutton:hover {
+    background-position: 0 0;
+    color:#fff;
+    border: 1px solid #4b595c;
+}
+/*  -------------^Footer^----------------------------- */
 
 @media (max-width:767px){
     body.lock {
@@ -434,24 +509,40 @@ a:focus:after {
         grid-gap: 1vw;
     }
     /* ------------------ */
+    .footer {
+        padding: 10% 5%;
+        display: block;
+    }
+    .footer .left {
+        width: 100%;
+    }
+    .right {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .letter {
+        font-size: 2vw;
+    }
+    /* ------------------ */
 }
 
 @media (max-width:500px){
     .cell {
-        width: 60%;
+        width: 50%;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        grid-gap: 2vw;
-        margin-bottom: 2vw;
+        grid-gap: 1.5vw;
+        margin-bottom: 1.5vw;
     }
     .hidden{
         display: none;
     }
     .show-hidden {
-        width: 60%;
+        width: 50%;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        grid-gap: 2vw;
+        grid-gap: 1.5vw;
     }
 }

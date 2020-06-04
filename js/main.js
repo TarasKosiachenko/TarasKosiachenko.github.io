@@ -1,10 +1,3 @@
-// document.querySelector(".header__burger").onclick = function() {
-//     open()
-//   };
-  
-//   function open() {
-//     document.querySelector(".header__menu").classList.toggle("show");
-//   }
 const head = document.querySelector (".header__menu");
 
 document.querySelector(".header__burger").onclick = () => {
