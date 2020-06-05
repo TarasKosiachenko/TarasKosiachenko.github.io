@@ -31,7 +31,7 @@ body {
     z-index: 2;
 }
 .header__logo{
-    flex: 0 0 70px;
+    flex: 0 0 60px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -109,6 +109,80 @@ a:focus:after {
     text-shadow: 0 0 9px rgba(0,0,0,8), 0 4px 6px rgba(0, 0, 0, 0.603);
     font-size: 6vw;
 }
+
+/*  */
+.wrapper {
+    margin: 130px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 30px;
+    bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.151);
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  .scroll_down:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+  }
+  @keyframes scroll_down_btn-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes scroll_down_btn-animation {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+/*  */
+
 .mybutton {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
@@ -211,7 +285,7 @@ a:focus:after {
 }
 .about__img > img {
     display: block;
-    width: 20vw;
+    width: 15vw;
     height: auto;
     margin-top: 15%;
 }
@@ -424,12 +498,12 @@ input[type~="text"], input[type~="password"], input[type~="select"], textarea
         position: fixed;
         top: -100%;
         right: 0%;
-        min-width: 30vw;
+        min-width: 20vw;
         height: auto;
         overflow: auto;
         transition: all 0.5s ease 0s;
         background-color: rgb(233, 130, 12);
-        padding: 70px 10 20 10;
+        padding: 70px 10px 20px 10px;
     }
     .header__menu.show {
         top: 0;

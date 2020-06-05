@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <title>TarasKosiachenko</title>
 </head>
+
 <body>
 <header class="header">
     <div class="container">
@@ -19,43 +20,48 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li><a href="" class="header__link">Home</a></li>
-                    <li><a href="" class="header__link">About Me</a></li>
-                    <li><a href="" class="header__link">Skills</a></li>
-                    <li><a href="" class="header__link">Resume</a></li>
-                    <li><a href="" class="header__link">Portfolio</a></li>
-                    <li><a href="" class="header__link">Contact Me</a></li>
+                    <li><a href="#head" class="header__link">Home</a></li>
+                    <li><a href="#about" class="header__link">About Me</a></li>
+                    <li><a href="#skill" class="header__link">Skills</a></li>
+                    <li><a href="#resume" class="header__link">Resume</a></li>
+                    <li><a href="#portfolio" class="header__link">Portfolio</a></li>
+                    <li><a href="#footer" class="header__link">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </header>
-<header class="head">
+<header id="head" class="head">
     <div class="container">
         <div class="head__body">
             <h1>Junior Front-end developer</h1>
-            <button class="mybutton"><b>Learn More</b></button>
         </div>
+    </div>
+    <div class="wrapper">
+        <button type="button" class="scroll_down" id="scroll_down"></button>
     </div>
 </header>
 
-<section class="about">
+<section id="about" class="about">
     <div class="left">
         <h1>A bit about me</h1>
-        <p> I’m fortunate in that I’m passionate about my day job. Relaxing for me is coding and keeping up to date with technology. I'm playing basketball and go to the gym. <br></p>
-        <p> I really love reading, this is mainly science-fiction, litrpg, fantasy and detectives. I run and swim frequently. I perform bodyweight exercises to stay fit. I like trying new sports so over the last few years I have snowboarded and swimm.</p>
-        <p> Personal qualities: Attentiveness, diligence, stress tolerance, accuracy, initiative, ability to work in a team, emotional stability, desire to work and develop, ability to work with a large amount of information, analytical mindset, tendency to self-study.</p>
+        <p> I’m fortunate in that I’m passionate about my day job. Relaxing for me is coding and keeping up to date with technology. <br></p>
+        <p> I really love reading, this is mainly science-fiction, fantasy and detectives. I'm playing basketball and go to the gym. I run and swim frequently, perform bodyweight exercises to stay fit. I like trying new sports so over the last few years I have snowboarded and gymnastics.</p>
+        <p> Education:<br>
+            National Technical University "Kharkiv Polytechnic Institute", 
+            Faculty of Computer and Information Technologies,
+            Masters degree in Computer Engineering, graduated in 2019</p>
     </div>
     <div class="about__img">
         <img src="/img/myPhoto.jpg" alt="">
     </div>
 </section>
 
-<section class="skill">
+<section id="skill" class="skill">
     <div class="left">
         <h1>My Skills</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero error reiciendis a amet aliquam. Doloribus nemo eos nesciunt sed numquam consequuntur, itaque quae similique perspiciatis perferendis molestias sunt laboriosam eaque?</p>
-        <button class="mybutton"><b>Contact Me</b></button>
+        <p> Personal qualities: Attentiveness, diligence, stress tolerance, accuracy, initiative, ability to work in a team, emotional stability, desire to work and develop, ability to work with a large amount of information, analytical mindset, tendency to self-study.</p>
+        <a href="#footer"><button class="mybutton"><b>Contact Me</b></button></a>
     </div>
     <div class="progbar">
         <p>HTML/CSS</p>
@@ -77,15 +83,15 @@
     </div>
 </section>
 
-<section class="resume">
+<section id="resume" class="resume">
     <div class="left">
         <h1>Resume</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, error. Est quae et blanditiis perferendis quas nam sunt facere. Voluptas eos animi distinctio dolores.</p>
-        <button class="mybutton"><b>Download Resume</b></button>
+        <p>You can also download my resume by click on the button below.</p>
+        <button class="mybutton" type="submit" onclick="window.location = '/resume/(CV) Taras Kosiachenko Junior Front-end Developer.docx';"><b>Download Resume</b></button>
     </div>
 </section>
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="left">
         <h1>Portfolio</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, error. Est quae et blanditiis perferendis quas nam sunt facere. Voluptas eos animi distinctio dolores.</p>
@@ -95,7 +101,7 @@
         <div><img src="/img/grid2.png" width="100%" alt=""></div>
         <div><img src="/img/grid4.png" width="100%" alt=""></div>
     </div>
-    <div class="hidden">
+    <div class="hidden" id="hidden">
         <div><img src="/img/grid6.png" width="100%" alt=""></div>
         <div><img src="/img/grid5.png" width="100%" alt=""></div>
         <div><img src="/img/grid6.png" width="100%" alt=""></div>
@@ -106,14 +112,14 @@
     <button class="mybutton" id="btnshow">Show More</button>
 </section>
 
-<section class="footer">
+<section id="footer" class="footer">
     <div class="left">
         <h1>Contact Me</h1>
-        <p class="footerp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, error. Est quae et blanditiis nam sunt facere. Voluptas eos animi distinctio dolores.</p><br><br>
-        <p>Kharkiv, Ukraine<br>23 years old (24.08.1996)</p><br><br><br>
+        <p>You can contact me by writing in: <br>Skype:live:.cid.63a85c2571d622f6 <br> Telegram <br> Viber</p><br><br>
+        <p>Yubileiny Avenue <br> Kharkiv, Ukraine<br>23 years old (24.08.1996)</p><br><br><br>
         <p><span class="letter">Email: </span> taras.kosiachenko@gmail.com</p><br>
-        <p><span class="letter">Phone:</span>+38(050)683-38-00</p><br>
-        <p><span class="letter">GitHub:</span><a href="https://github.com/TarasKosiachenko"><i class="fab fa-github-square" style="font-size: 2.5em; color: #919191; height: 100px;"></i></a></p>
+        <p style="margin-top: 15px;"><span class="letter">Phone:</span>+38(050)683-38-00</p><br>
+        <p><span class="letter">GitHub:</span><a href="https://github.com/TarasKosiachenko"><i class="fab fa-github-square" style="font-size: 2.5em; color: #919191;"></i></a></p>
     </div>
     <div class="right">
         <form name="test" method="post" action="input1.php">
@@ -123,12 +129,13 @@
         <input type="text" size="100">
         <p><b>Message *</b></p>
         <textarea name="comment" cols="40" rows="3"></textarea><br>
-        <button class="footerbutton" type="submit" accesskey="s">Contact Me</button>
+        <button class="footerbutton" type="button">Contact Me</button>
         <button class="footerbutton" type="reset">Clear</button>
        </form>
     </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/16bd44b3ff.js" crossorigin="anonymous"></script>
 <script src="/js/main.js"></script>
 </body>
